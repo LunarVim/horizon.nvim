@@ -98,6 +98,13 @@ theme.set_highlights = function()
   hl(0, "Bold", { fg = 'NONE', bg = 'NONE', bold=true, })
   hl(0, "Italic", { fg = 'NONE', bg = 'NONE', italic=true, })
   hl(0, "Underlined", { fg = 'NONE', bg = 'NONE', underline=true, })
+  hl(0, "Ignore", { fg = c.hint, bg = 'NONE', bold=true, })
+  hl(0, "Todo", { fg = c.info, bg = 'NONE', bold=true, })
+  hl(0, "Error", { fg = c.error, bg = 'NONE', bold=true, })
+  hl(0, "Statement", { fg = c.purple, bg = 'NONE' })
+  hl(0, "Identifier", { fg = c.fg, bg = 'NONE' })
+  hl(0, "PreCondit", { fg = c.purple, bg = 'NONE' })
+  hl(0, "Special", { fg = c.orange, bg = 'NONE' })
 
   -- Treesitter
   hl(0, "TSComment", { link = 'Comment' })
