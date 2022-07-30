@@ -7,7 +7,7 @@ Created with [colorgen-nvim](https://github.com/ChristianChiarulli/colorgen-nvim
 ```lua
 use "lunarvim/horizon.nvim"
 
-vim.opt.colorscheme = "horizon"
+vim.cmd[[colorscheme horizon]] 
 ```
 
 ## Demo
