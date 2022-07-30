@@ -5,7 +5,7 @@ Created with [colorgen-nvim](https://github.com/ChristianChiarulli/colorgen-nvim
 ## Installation
 
 ```lua
-use "lunarvim/horzizon.nvim"
+use "lunarvim/horizon.nvim"
 
 vim.opt.colorscheme = "horizon"
 ```
