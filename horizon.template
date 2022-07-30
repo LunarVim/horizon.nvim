@@ -1,0 +1,575 @@
+[information]
+name = "horizon"
+background = "dark"
+author = 'Christian Chiarulli <chrisatmachine@gmail.com>'
+
+[palette]
+fg = '#8B8D8F'
+bg = '#1D1F27'
+
+alt_fg = '#8B8D8F'
+alt_bg = '#1D1F27'
+dark = '#16161C'
+accent = '#6C6F93'
+popup_back = '#16161C'
+search_orange = '#083C5A'
+line = '#1D1F27'
+
+search_blue = '#083C5A'
+white = '#8B8D8F'
+gray = '#4B4C53'
+reference = '#2E303E'
+dark_gray = '#21252E'
+context = '#6C6F93'
+light_gray = '#c8ccd4'
+tree_gray = '#1D1F27'
+
+purple = "#B877DB"
+cyan = "#25B2BC"
+red = "#E95678"
+orange = "#F09383"
+yelloworange = "#FAB795"
+yellow = "#FAC29A"
+
+folder_blue = '#6C6F93'
+
+cursor_fg = '#515052'
+cursor_bg = '#8E8F8D'
+
+sign_add = '#27D796'
+sign_change = '#21BFC2'
+sign_add_alt = '#27D796'
+sign_change_alt = '#21BFC2'
+sign_delete = '#E95379'
+tree_sign_add = '#09F7A0'
+tree_sign_change = '#FAB28E'
+
+error = '#F43E5C'
+warn = '#FAB28E'
+info = '#27D796'
+hint = '#6C6F93'
+
+error_bg = '#33222c'
+warn_bg = '#332e31'
+info_bg = '#1e3132'
+hint_bg = '#252732'
+
+success_green = '#09F7A0'
+
+purple_test = '#ff007c'
+cyan_test = '#00dfff'
+
+ui_blue = '#214a63'
+ui2_blue = '#042E48'
+ui3_blue = '#0195F7'
+ui4_blue = '#75BEFF'
+ui_orange = '#E8AB53'
+ui_purple = '#B180D7'
+
+# Dark UI
+#16161C
+#1A1C23
+#1C1E26
+#232530
+#2E303E
+#6C6F93
+#E9436F
+#E95379
+#F43E5C
+#09F7A0
+#27D796
+#21BFC2
+#FAB28E
+
+[Editor]
+Normal = 'fg bg'
+SignColumn = '- bg'
+MsgArea = 'fg bg'
+ModeMsg = 'fg alt_bg'
+MsgSeparator = 'fg bg'
+SpellBad = '- - c red'
+SpellCap = '- - c yellow'
+SpellLocal = '- - u yelloworange'
+SpellRare = '- - u purple'
+NormalNC = 'fg bg'
+Pmenu = 'light_gray alt_bg'
+PmenuSel = '- ui2_blue'
+WildMenu = 'fg ui2_blue'
+CursorLineNr = 'light_gray - b'
+Folded = 'gray alt_bg'
+FoldColumn = 'gray alt_bg'
+LineNr = 'gray -'
+FloatBoder = 'gray alt_bg'
+Whitespace = 'bg'
+VertSplit = 'gray bg'
+CursorLine = '- dark_gray'
+CursorColumn = '- alt_bg'
+ColorColumn = '- alt_bg'
+NormalFloat = '- alt_bg'
+Visual = '- ui_blue'
+VisualNOS = '- alt_bg'
+WarningMsg = 'error bg'
+DiffText = 'alt_bg sign_delete'
+DiffAdd = 'alt_bg sign_add'
+DiffChange = 'alt_bg sign_change u'
+DiffDelete = 'alt_bg sign_delete'
+QuickFixLine = '- ui2_blue'
+PmenuSbar = '- alt_bg'
+PmenuThumb = '- gray'
+MatchWord = '- - u'
+MatchParen = 'hint - u'
+MatchWordCur = '- - u'
+MatchParenCur = '- - u'
+Cursor = 'cursor_fg cursor_bg'
+lCursor = 'cursor_fg cursor_bg'
+CursorIM = 'cursor_fg cursor_bg'
+TermCursor = 'cursor_fg cursor_bg'
+TermCursorNC = 'cursor_fg cursor_bg'
+Conceal = 'gray'
+Directory = 'folder_blue'
+SpecialKey = 'red - b'
+ErrorMsg = 'error bg b'
+Search = '- ui2_blue'
+IncSearch = '- ui2_blue'
+Substitute = '- ui2_blue'
+MoreMsg = 'orange'
+Question = 'orange'
+EndOfBuffer = 'bg'
+NonText = 'bg'
+TabLine = 'light_gray line'
+TabLineSel = 'fg line'
+TabLineFill = 'line line'
+
+[Code]
+Comment = 'gray'
+Variable = 'red'
+String = 'yelloworange'
+Character = 'yelloworange'
+Number = 'orange'
+Float = 'orange'
+Boolean = 'orange'
+Constant = 'orange'
+Type = 'yellow'
+Function = 'cyan'
+Keyword = 'purple'
+Conditional = 'purple'
+Repeat = 'purple'
+Operator = 'fg'
+PreProc = 'purple'
+Include = 'purple'
+Exception = 'purple'
+StorageClass = 'yellow'
+Structure = 'yellow'
+Typedef = 'purple'
+Define = 'purple'
+Macro = 'purple'
+Debug = 'red'
+Title = 'yellow - b'
+Label = 'fg'
+SpecialChar = 'yelloworange'
+Delimiter = 'fg'
+SpecialComment = 'fg'
+Tag = 'red'
+Bold = '- - b'
+Italic = '- - i'
+Underlined = '- - u'
+# Ignore = 'magenta - b'
+# Todo = 'magenta - b'
+# Error = 'error - b'
+# Statement = 'purple'
+# Identifier = 'fg'
+# PreCondit = 'purple'
+# Special = 'orange'
+
+[Treesitter]
+TSComment = 'link:Comment'
+TSVariable = 'link:Variable'
+TSString = 'link:String'
+TSStringRegex = 'link:String'
+TSStringEscape = 'link:String'
+TSCharacter = 'link:String'
+TSCharacterSpecial = 'link:SpecialChar'
+TSNumber = 'link:Number'
+TSFloat = 'link:Float'
+TSBoolean = 'link:Boolean'
+TSConstant = 'link:Constant'
+TSConstBuiltin = 'link:Constant'
+TSConstructor = 'link:Type'
+TSType = 'link:Type'
+TSInclude = 'link:Include'
+TSException = 'link:Exception'
+TSKeyword = 'link:Keyword'
+TSKeywordReturn = 'link:Keyword'
+TSKeywordOperator = 'link:Keyword'
+TSKeywordFunction = 'link:Keyword'
+TSFunction = 'link:Function'
+TSFuncBuiltin = 'link:Function'
+TSMethod = 'link:Function'
+TSFuncMacro = 'link:Function'
+TSConditional = 'link:Conditional'
+TSRepeat = 'link:Repeat'
+TSOperator = 'link:Operator'
+TSPreProc = 'link:PreProc'
+TSStorageClass = 'link:StorageClass'
+TSStructure = 'link:Structure'
+TSTypeDefinition = 'link:Typedef'
+TSDefine = 'link:Define'
+TSNote = 'link:Comment'
+TSNone = 'light_gray'
+TSTodo = 'link:Todo'
+TSDebug = 'link:Debug'
+TSDanger = 'link:Error'
+TSTitle = 'link:Title'
+TSLabel = 'link:Label'
+TSPunctDelimiter = 'link:Delimiter'
+TSTagDelimiter = 'red'
+TSPunctBracket = 'link:Delimiter'
+TSPunctSpecial = 'link:Delimiter'
+TSTag = 'link:Tag'
+TSStrong = 'link:Bold'
+TSEmphasis = 'link:Italic'
+TSUnderline = 'link:Underline'
+TSStrike = '- - s'
+TSStringSpecial = 'fg'
+TSEnvironmentName = 'cyan'
+TSVariableBuiltin = 'red'
+TSConstMacro = 'orange'
+TSTypeBuiltin = 'orange'
+TSAnnotation = 'cyan'
+TSNamespace = 'cyan'
+TSSymbol = 'fg'
+TSField = 'red'
+TSProperty = 'red'
+TSParameter = 'red'
+TSParameterReference = 'red'
+TSAttribute = 'red'
+TSText = 'alt_fg'
+TSTagAttribute = 'orange - i'
+TSError = 'error'
+TSWarning = 'warn'
+TSQueryLinterError = 'error'
+TSURI = 'cyan - u'
+TSMath = 'yellow'
+TSLiteral = 'orange'
+
+# [markdown]
+# markdownBlockquote = 'orange'
+# markdownCode = 'orange'
+# markdownCodeBlock = 'orange'
+# markdownCodeDelimiter = 'orange'
+# markdownH1 = 'link:Title'
+# markdownH2 = 'link:Title'
+# markdownH3 = 'link:Title'
+# markdownH4 = 'link:Title'
+# markdownH5 = 'link:Title'
+# markdownH6 = 'link:Title'
+# markdownHeadingDelimiter = 'blue'
+# markdownHeadingRule = 'fg - b'
+# markdownId = 'link:Identifier'
+# markdownIdDeclaration = 'blue'
+# markdownIdDelimiter = 'light_gray'
+# markdownLinkDelimiter = 'light_gray'
+# markdownBold = 'blue - b'
+# markdownItalic = 'link:Italic'
+# markdownBoldItalic = 'yellow - bi'
+# markdownListMarker = 'blue'
+# markdownOrderedListMarker = 'purple'
+# markdownRule = 'gray'
+# markdownUrl = 'cyan - t'
+# markdownLinkText = 'blue'
+# markdownFootnote = 'orange'
+# markdownFootnoteDefinition = 'orange'
+# markdownEscape = 'yellow'
+
+[Whichkey]
+WhichKey = 'purple'
+WhichKeySeperator = 'yellow'
+WhichKeyGroup = 'red'
+WhichKeyDesc = 'fg'
+WhichKeyFloat = '- alt_bg'
+
+[Git]
+SignAdd = 'sign_add'
+SignChange = 'sign_change'
+SignDelete = 'sign_delete'
+GitSignsAdd = 'sign_add'
+GitSignsChange = 'sign_change'
+GitSignsDelete = 'sign_delete'
+
+[LSP]
+DiagnosticHint = 'hint'
+DiagnosticInfo = 'info'
+DiagnosticWarn = 'warn'
+DiagnosticError = 'error'
+DiagnosticOther = 'ui_purple'
+DiagnosticSignHint = 'link:DiagnosticHint'
+DiagnosticSignInfo = 'link:DiagnosticInfo'
+DiagnosticSignWarn = 'link:DiagnosticWarn'
+DiagnosticSignError = 'link:DiagnosticError'
+DiagnosticSignOther = 'link:DiagnosticOther'
+DiagnosticSignWarning = 'link:DiagnosticWarn'
+DiagnosticFloatingHint = 'link:DiagnosticHint'
+DiagnosticFloatingInfo = 'link:DiagnosticInfo'
+DiagnosticFloatingWarn = 'link:DiagnosticWarn'
+DiagnosticFloatingError = 'link:DiagnosticError'
+DiagnosticUnderlineHint = '- - c hint'
+DiagnosticUnderlineInfo = '- - c info'
+DiagnosticUnderlineWarn = '- - c warn'
+DiagnosticUnderlineError = '- - c error'
+DiagnosticSignInformation = 'link:DiagnosticInfo'
+DiagnosticVirtualTextHint = 'hint hint_bg'
+DiagnosticVirtualTextInfo = 'info info_bg'
+DiagnosticVirtualTextWarn = 'warn warn_bg'
+DiagnosticVirtualTextError = 'error error_bg'
+
+LspDiagnosticsError = 'error'
+LspDiagnosticsWarning = 'warn'
+LspDiagnosticsInfo = 'info'
+LspDiagnosticsInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsHint = 'hint'
+LspDiagnosticsDefaultError = 'link:LspDiagnosticsError'
+LspDiagnosticsDefaultWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsDefaultInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsDefaultInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsDefaultHint = 'link:LspDiagnosticsHint'
+LspDiagnosticsVirtualTextError = 'link:DiagnosticVirtualTextError'
+LspDiagnosticsVirtualTextWarning = 'link:DiagnosticVirtualTextWarn'
+LspDiagnosticsVirtualTextInformation = 'link:DiagnosticVirtualTextInfo'
+LspDiagnosticsVirtualTextInfo = 'link:DiagnosticVirtualTextInfo'
+LspDiagnosticsVirtualTextHint = 'link:DiagnosticVirtualTextHint'
+LspDiagnosticsFloatingError = 'link:LspDiagnosticsError'
+LspDiagnosticsFloatingWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsFloatingInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsFloatingInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsFloatingHint = 'link:LspDiagnosticsHint'
+LspDiagnosticsSignError = 'link:LspDiagnosticsError'
+LspDiagnosticsSignWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsSignInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsSignInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsSignHint = 'link:LspDiagnosticsHint'
+
+NvimTreeLspDiagnosticsError = 'link:LspDiagnosticsError'
+NvimTreeLspDiagnosticsWarning = 'link:LspDiagnosticsWarning'
+NvimTreeLspDiagnosticsInformation = 'link:LspDiagnosticsInfo'
+NvimTreeLspDiagnosticsInfo = 'link:LspDiagnosticsInfo'
+NvimTreeLspDiagnosticsHint = 'link:LspDiagnosticsHint'
+
+LspDiagnosticsUnderlineError = 'link:DiagnosticUnderlineError'
+LspDiagnosticsUnderlineWarning = 'link:DiagnosticUnderlineWarn'
+LspDiagnosticsUnderlineInformation = 'link:DiagnosticUnderlineInfo'
+LspDiagnosticsUnderlineInfo = 'link:DiagnosticUnderlineInfo'
+LspDiagnosticsUnderlineHint = 'link:DiagnosticUnderlineHint'
+
+LspReferenceRead = '- reference'
+LspReferenceText = '- reference'
+LspReferenceWrite = '- reference'
+
+LspCodeLens = 'context - i'
+LspCodeLensSeparator = 'context - i'
+
+[Quickscope]
+QuickScopePrimary = '#ff007c - u'
+QuickScopeSecondary = '#00dfff - u'
+
+[Telescope]
+TelescopeSelection = '- ui2_blue'
+TelescopeSelectionCaret = 'red ui2_blue'
+TelescopeMatching = 'yellow - bi'
+TelescopeBorder = 'alt_fg'
+TelescopeNormal = 'light_gray alt_bg'
+TelescopePromptTitle = "orange"
+TelescopePromptPrefix = "cyan"
+TelescopeResultsTitle = "orange"
+TelescopePreviewTitle = "orange"
+TelescopePromptCounter = "red"
+TelescopePreviewHyphen = "red"
+
+[NvimTree]
+NvimTreeFolderIcon = 'fg'
+NvimTreeIndentMarker = 'light_gray'
+NvimTreeNormal = 'fg alt_bg'
+NvimTreeVertSplit = 'alt_bg alt_bg'
+NvimTreeFolderName = 'fg'
+NvimTreeOpenedFolderName = 'fg - bi'
+NvimTreeEmptyFolderName = 'gray - i'
+NvimTreeGitIgnored = 'gray - i'
+NvimTreeImageFile = 'light_gray'
+NvimTreeSpecialFile = 'orange'
+NvimTreeEndOfBuffer = 'alt_bg'
+NvimTreeCursorLine = '- dark_gray'
+NvimTreeGitStaged = 'sign_add_alt'
+NvimTreeGitNew = 'sign_add_alt'
+NvimTreeGitRenamed = 'sign_add_alt'
+NvimTreeGitDeleted = 'sign_delete'
+NvimTreeGitMerge = 'sign_change_alt'
+NvimTreeGitDirty = 'sign_change_alt'
+NvimTreeSymlink = 'cyan'
+NvimTreeRootFolder = 'fg - b'
+NvimTreeExecFile = '#9FBA89'
+
+[Lir]
+LirFloatNormal = 'fg alt_bg'
+LirDir = 'link:Directory'
+LirSymLink = 'cyan'
+LirEmptyDirText = 'gray - i'
+
+[Buffer]
+BufferCurrent = 'fg bg'
+BufferCurrentIndex = 'fg bg'
+BufferCurrentMod = 'info bg'
+BufferCurrentSign = 'hint bg'
+BufferCurrentTarget = 'red bg b'
+
+BufferVisible = 'fg bg'
+BufferVisibleIndex = 'fg bg'
+BufferVisibleMod = 'info bg'
+BufferVisibleSign = 'gray bg'
+BufferVisibleTarget = 'red bg b'
+
+BufferInactive = 'gray alt_bg'
+BufferInactiveIndex = 'gray alt_bg'
+BufferInactiveMod = 'info alt_bg'
+BufferInactiveSign = 'gray alt_bg'
+BufferInactiveTarget = 'red alt_bg b'
+
+[StatusLine]
+StatusLine = 'context bg'
+StatusLineNC = 'line bg'
+StatusLineSeparator = 'line'
+StatusLineTerm = 'line'
+StatusLineTermNC = 'line'
+
+[IndentBlankline]
+IndentBlanklineContextChar = 'context'
+IndentBlanklineContextStart = '- - u'
+IndentBlanklineChar = 'gray'
+# IndentBlanklineSpaceCharBlankline = 'info'
+# IndentBlanklineSpaceChar = 'cyan_test'
+
+[Cmp]
+CmpItemAbbrDeprecated = 'gray - s'
+CmpItemAbbrMatch = 'ui3_blue'
+CmpItemAbbrMatchFuzzy = 'ui3_blue'
+
+CmpItemKindFunction = 'cyan'
+CmpItemKindMethod = 'cyan'
+CmpItemKindConstructor = 'yellow'
+CmpItemKindClass = 'yellow'
+CmpItemKindEnum = 'yellow'
+CmpItemKindEvent = 'red'
+CmpItemKindInterface = 'yellow'
+CmpItemKindStruct = 'yellow'
+CmpItemKindVariable = 'red'
+CmpItemKindField = 'red'
+CmpItemKindProperty = 'red'
+CmpItemKindEnumMember = 'orange'
+CmpItemKindConstant = 'orange'
+CmpItemKindKeyword = 'purple'
+CmpItemKindModule = 'yelloworange'
+CmpItemKindValue = 'fg'
+CmpItemKindUnit = 'fg'
+CmpItemKindText = 'fg'
+CmpItemKindSnippet = 'purple'
+CmpItemKindFile = 'fg'
+CmpItemKindFolder = 'fg'
+CmpItemKindColor = 'fg'
+CmpItemKindReference = 'fg'
+CmpItemKindOperator = 'fg'
+CmpItemKindTypeParameter = 'red'
+
+[Navic]
+NavicIconsFile = 'fg'
+NavicIconsModule = 'yelloworange'
+NavicIconsNamespace = 'fg'
+NavicIconsPackage = 'fg'
+NavicIconsClass = 'yellow'
+NavicIconsMethod = 'cyan'
+NavicIconsProperty = 'red'
+NavicIconsField = 'red'
+NavicIconsConstructor = 'yellow'
+NavicIconsEnum = 'orange'
+NavicIconsInterface = 'yellow'
+NavicIconsFunction = 'cyan'
+NavicIconsVariable = 'red'
+NavicIconsConstant = 'orange'
+NavicIconsString = 'yelloworange'
+NavicIconsNumber = 'orange'
+NavicIconsBoolean = 'orange'
+NavicIconsArray = 'yellow'
+NavicIconsObject = 'yellow'
+NavicIconsKey = 'purple'
+NavicIconsKeyword = 'purple'
+NavicIconsNull = 'orange'
+NavicIconsEnumMember = 'orange'
+NavicIconsStruct = 'cyan'
+NavicIconsEvent = 'yellow'
+NavicIconsOperator = 'fg'
+NavicIconsTypeParameter = 'red'
+NavicText = 'fg'
+NavicSeparator = 'fg'
+
+[Packer]
+packerString = 'ui_orange'
+packerHash = 'ui4_blue'
+packerOutput = 'ui_purple'
+packerRelDate = 'gray'
+packerSuccess = 'success_green'
+packerStatusSuccess = 'ui4_blue'
+
+[SymbolOutline]
+SymbolsOutlineConnector = 'gray'
+FocusedSymbol = '- #36383F'
+
+[Notify]
+NotifyERRORBorder = '#8A1F1F'
+NotifyWARNBorder = '#79491D'
+NotifyINFOBorder = 'ui_blue'
+NotifyDEBUGBorder = 'gray'
+NotifyTRACEBorder = '#4F3552'
+NotifyERRORIcon = 'error'
+NotifyWARNIcon = 'warn'
+NotifyINFOIcon = 'ui4_blue'
+NotifyDEBUGIcon = 'gray'
+NotifyTRACEIcon = 'ui_purple'
+NotifyERRORTitle = 'error'
+NotifyWARNTitle = 'warn'
+NotifyINFOTitle = 'ui4_blue'
+NotifyDEBUGTitle = 'gray'
+NotifyTRACETitle = 'ui_purple'
+# NotifyERRORBody = Normal
+# NotifyWARNBody = Normal
+# NotifyINFOBody = Normal
+# NotifyDEBUGBody = Normal
+# NotifyTRACEBody = Normal
+
+[Hop]
+HopNextKey = '#4ae0ff'
+HopNextKey1 = '#d44eed'
+HopNextKey2 = '#b42ecd'
+HopUnmatched = 'gray'
+HopPreview = '#c7ba7d'
+# HopCursor = ''
+
+[Crates]
+CratesNvimLoading = 'hint'
+CratesNvimVersion = 'hint'
+# CratesNvimPreRelease =
+# CratesNvimYanked =
+# CratesNvimNoMatch =
+# CratesNvimUpgrade =
+# CratesNvimError =
+# CratesNvimPopupPillText =
+# CratesNvimPopupPillBorder =
+# CratesNvimPopupDescription =
+# CratesNvimPopupLabel =
+# CratesNvimPopupVersion =
+# CratesNvimPopupPreRelease =
+# CratesNvimPopupYanked =
+# CratesNvimPopupVersionDate =
+# CratesNvimPopupFeature =
+# CratesNvimPopupEnabled =
+# CratesNvimPopupTransitive =
+# CratesNvimPopupDependency =
+# CratesNvimPopupOptional =
+# CratesNvimPopupDependencyVersion =
+# CratesNvimPopupLoading =
