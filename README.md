@@ -15,3 +15,7 @@ vim.opt.colorscheme = "horizon"
 ![1](./assets/demo1.png) 
 ![2](./assets/demo2.png) 
 ![3](./assets/demo3.png) 
+
+## Credit & References
+
+[horizon-theme](https://github.com/jolaleye/horizon-theme-vscode)
