@@ -12,6 +12,8 @@ M.setup = function()
   vim.o.termguicolors = true
   vim.g.colors_name = 'horizon'
 
+  require('horizon.terminal').setup()
+
   theme.set_highlights()
 end
 
