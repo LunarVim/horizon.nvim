@@ -261,6 +261,9 @@ theme.set_highlights = function()
   hl(0, "@lsp.type.macro", { link = '@macro' })
   hl(0, "@lsp.type.decorator", { link = '@function' })
   hl(0, "@lsp.typemod.variable.readonly", { link = '@constant' })
+  hl(0, "@lsp.typemod.method.defaultLibrary", { link = '@function.builtin' })
+  hl(0, "@lsp.typemod.function.defaultLibrary", { link = '@function.builtin' })
+  hl(0, "@lsp.typemod.variable.defaultLibrary", { link = '@variable.builtin' })
   hl(0, "@lsp.mod.deprecated", { fg = 'NONE', bg = 'NONE', strikethrough=true, })
 
   -- Whichkey
